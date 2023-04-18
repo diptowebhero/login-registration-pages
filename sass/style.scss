@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background: #f3f5f9;
+}
+
+.login_container {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 7rem;
+  padding: 0 2rem;
+
+  .img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .login-content-info {
+    max-width: 460px !important;
+  }
+
+  .login-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 360px;
+    width: 100%;
+    img {
+      height: 100px;
+    }
+    h2 {
+      margin: 15px 0;
+      color: #333;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+
+    .input_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 500px;
+      width: 100%;
+      background: white;
+      padding: 14px 16px;
+      border: 1px solid #d0deef;
+      border-radius: 5px;
+      margin-top: 10px;
+
+      .flag {
+        display: flex;
+        align-items: center;
+        border-right: 1px solid rgba(52, 67, 86, 0.2);
+        font-size: 16px;
+        gap: 10px;
+        color: #454c7e;
+        flex-basis: 80px;
+        margin-right: 15px;
+        img {
+          width: 20px;
+          height: 20px;
+          object-fit: cover;
+        }
+      }
+
+      .input {
+        flex: 1;
+        position: relative;
+        i {
+          position: absolute;
+          right: 6px;
+          top: 4px;
+          color: #7e7878;
+        }
+        input {
+          font-size: 16px;
+          width: 100%;
+          background: transparent;
+          border: none;
+          font-weight: 500;
+          outline: none;
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+          &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    label {
+      font-size: 15px;
+      line-height: 27px;
+      color: #343b6d;
+      font-weight: 600;
+      span {
+        color: red;
+      }
+    }
+
+    .title {
+      h2 {
+        font-size: 24px;
+        line-height: 1.5;
+        color: #354895;
+        font-weight: 600;
+        margin-bottom: 28px;
+      }
+    }
+
+    .login_form {
+      width: 100%;
+    }
+    .info_form {
+      width: 100%;
+    }
+  }
+
+  .resend_otp {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #454c7e;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    span {
+      color: #e91e63;
+    }
+  }
+
+  input.btn.otp-btn {
+    margin-top: 30px;
+  }
+  .forget_number {
+    margin-top: 5px;
+  }
+  .mt_3 {
+    margin-top: 18px;
+  }
+
+  a {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #999;
+    font-size: 0.9rem;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: #38d39f;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 30px 0;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .btn:hover {
+    background-position: right;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .login_form {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .login_container {
+      column-gap: 3rem !important;
+    }
+  }
+
+  @media screen and (max-width: 745px) {
+    .login_container {
+      grid-gap: 7rem;
+    }
+
+    .img {
+      display: none;
+    }
+  }
+}
+
+.confirmation-container {
+  display: flex;
+  align-items: center;
+  .confirmation-inner {
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    padding: 50px 30px;
+    border-radius: 8px;
+    h2 {
+      color: #354895;
+      font-weight: bold;
+      font-size: 40px;
+    }
+  }
+  .confirmation-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    width: 50%;
+    height: 100%;
+  }
+}

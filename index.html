@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="public/assets/css/style.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div class="login_container">
+		<!-- left side -->
+		<div class="img">
+			<img src="img/bg.svg">
+		</div>
+
+		<!-- right side -->
+		<div class="login-content">
+			<form class="login_form">
+				<div class="title">
+					<h2>শেখার নতুন জগতে স্বাগতম</h2>
+				</div>
+
+				<div class="form_group">
+					<label for="">মোবাইল নম্বর
+						<span>*</span>
+					</label>
+					<div class="input_container">
+						<div class="flag">
+							<img src="./img/bd-flag.png" alt="">
+							<span>+88</span>
+						</div>
+						<div class="input">
+							<input type="number" name="phoneNumber" maxlength="11" placeholder="মোবাইল নম্বর দিন"
+								class="input">
+						</div>
+					</div>
+
+				</div>
+				<a href="otpVerification.html">
+					<button type="submit" class="btn">এগিয়ে যান</button>
+				</a>
+			</form>
+		</div>
+	</div>
+
+	<script>
+		const form = document.querySelector('form');
+		form.addEventListener('click', (e) => {
+			e.preventDefault()
+		})
+	</script>
+
+</body>
+
+</html>
