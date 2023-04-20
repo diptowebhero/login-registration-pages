@@ -63,6 +63,10 @@ body {
   width: 100%;
 }
 
+.login_container .login-content .form {
+  min-width: 360px;
+}
+
 .login_container .login-content img {
   height: 100px;
 }
@@ -72,6 +76,80 @@ body {
   color: #333;
   text-transform: uppercase;
   font-size: 20px;
+}
+
+.login_container .login-content .resend_otp {
+  margin-top: 25px;
+}
+
+.login_container .login-content .resend_otp p {
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.login_container .login-content .resend_otp span {
+  color: #e91e63;
+  margin-left: 5px;
+}
+
+.login_container .login-content .resend_otp button.resend_btn {
+  padding: 5px 25px;
+  border: none;
+  font-size: 15px;
+  background: #ff875a;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login_container .login-content .errorMsg {
+  color: red;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.login_container .login-content .wrong_number_box {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-top: 27px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.login_container .login-content .wrong_number_box p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #676ea0;
+}
+
+.login_container .login-content .wrong_number_box .resend-btn {
+  background-color: #243061;
+  height: 25px;
+  width: 150px;
+}
+
+.login_container .login-content .wrong_number_box .edit_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.login_container .login-content .wrong_number_box .edit_number span {
+  color: #454c7e;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .login_container .login-content .input_container {
@@ -176,26 +254,6 @@ body {
   width: 100%;
 }
 
-.login_container .resend_otp {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #454c7e;
-  margin-top: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  row-gap: 8px;
-}
-
-.login_container .resend_otp span {
-  color: #e91e63;
-}
-
 .login_container input.btn.otp-btn {
   margin-top: 30px;
 }
@@ -213,7 +271,7 @@ body {
   text-align: right;
   text-decoration: none;
   color: #999;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }

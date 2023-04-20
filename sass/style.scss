@@ -39,6 +39,9 @@ body {
     align-items: center;
     max-width: 360px;
     width: 100%;
+    .form {
+      min-width: 360px;
+    }
     img {
       height: 100px;
     }
@@ -47,6 +50,65 @@ body {
       color: #333;
       text-transform: uppercase;
       font-size: 20px;
+    }
+    .resend_otp {
+      margin-top: 25px;
+      p {
+        padding: 0;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+      span {
+        color: #e91e63;
+        margin-left: 5px;
+      }
+      button.resend_btn {
+        padding: 5px 25px;
+        border: none;
+        font-size: 15px;
+        background: #ff875a;
+        color: white;
+        font-weight: 500;
+        border-radius: 5px;
+        display: flex;
+      }
+    }
+    .errorMsg {
+      color: red;
+      font-size: 14px;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+    .wrong_number_box {
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #fff;
+      margin-top: 27px;
+      max-width: 400px;
+      width: 100%;
+
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        color: #676ea0;
+      }
+
+      .resend-btn {
+        background-color: #243061;
+        height: 25px;
+        width: 150px;
+      }
+
+      .edit_number {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        span {
+          color: #454c7e;
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
     }
 
     .input_container {
@@ -133,19 +195,19 @@ body {
     }
   }
 
-  .resend_otp {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #454c7e;
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 8px;
-    span {
-      color: #e91e63;
-    }
-  }
+  // .resend_otp {
+  //   font-weight: 500;
+  //   font-size: 16px;
+  //   line-height: 1.5;
+  //   color: #454c7e;
+  //   margin-top: 32px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   row-gap: 8px;
+  //   span {
+  //     color: #e91e63;
+  //   }
+  // }
 
   input.btn.otp-btn {
     margin-top: 30px;
@@ -162,7 +224,7 @@ body {
     text-align: right;
     text-decoration: none;
     color: #999;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     transition: 0.3s;
   }
 
